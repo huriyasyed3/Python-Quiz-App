@@ -222,6 +222,7 @@ else:
         else:
             st.write(f"❌ **{ans['question']}** - Your Answer: **{ans['selected']}** | Correct Answer: **{ans['correct']}**")
     
+    
     if st.button("Restart Quiz 🔄"):
         st.session_state.index = 0
         st.session_state.score = 0
@@ -229,3 +230,11 @@ else:
         st.session_state.answered = False
         st.session_state.user_answers = []
         st.rerun()
+# Footer
+st.markdown("---")  
+st.markdown(
+    "<h6 style='text-align: center;'>👩‍💻 Created by Huriya Syed | © 2025</h6>", 
+    unsafe_allow_html=True
+)
+
+       
